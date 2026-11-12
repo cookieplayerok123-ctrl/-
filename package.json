@@ -1,0 +1,16 @@
+{
+  "name": "rules-of-silence-animation",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "tts": ".venv/bin/python tools/tts.py",
+    "render": "node tools/render.mjs",
+    "stills": "node tools/render.mjs --stills",
+    "build": "pnpm tts && pnpm render"
+  },
+  "dependencies": {
+    "@fontsource/caveat": "^5.0.0",
+    "@fontsource/montserrat": "^5.0.0",
+    "puppeteer-core": "^23.0.0"
+  }
+}
